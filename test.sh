@@ -5,11 +5,11 @@ AWS_REGION=us-east-1
 # Note: this is the GPU optimized AMI in us-east-1 - 10/29/2018
 EKS_AMI=ami-058bfb8c236caae89
 
-NODE_INSTANCE=p2.xlarge
+NODE_INSTANCE=p3.2xlarge
 
 NODE_COUNT=1
 
-CLUSTER_NAME=eks-gpu
+CLUSTER_NAME=eks-gpu-test
 
 # Size in GB
 NODE_VOLUME_SIZE=200
