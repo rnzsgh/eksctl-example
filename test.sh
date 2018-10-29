@@ -7,7 +7,7 @@ EKS_AMI=ami-058bfb8c236caae89
 
 NODE_INSTANCE=p2.xlarge
 
-NODE_COUNT=3
+NODE_COUNT=2
 
 CLUSTER_NAME=gpu-eks
 
@@ -20,7 +20,7 @@ ZONES=us-east-1a,us-east-1c,us-east-1d,us-east-1f
 SSH_KEY=$HOME/.ssh/id_rsa.pub
 
 # Timeout in minutes
-TIMEOUT=40
+TIMEOUT=60m
 
 mkdir -p $HOME/bin
 
@@ -50,4 +50,5 @@ eksctl create cluster --name=$CLUSTER_NAME \
                       --region=$AWS_REGION \
                       --node-volume-size=$NODE_VOLUME_SIZE \
                       --zones=$ZONES
+
 
